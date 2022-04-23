@@ -1,10 +1,12 @@
 class Main{
   public static void main(String[] args) {
 
+    //A. SAMUEL MOLINA MORALES
+
     //-------CLASE ELECTRODOMESTICO-------
     System.out.println("=======|CLASE ELECTRODOMESTICO|=======");
     Electrodomestico frigorifico = new Electrodomestico();
-    Electrodomestico lavadora = new Electrodomestico(199.99, "Blanco", "D", 23.800);
+    Electrodomestico lavadora = new Electrodomestico(199.99, "Rojo", "D", 23.800);
 
     //Imprimir
     System.out.println("POR DEFECTO: " + frigorifico);
@@ -13,7 +15,7 @@ class Main{
     //Modificar valores con SET
     System.out.println("Valores de LAVADORA modificados con SET");
     lavadora.setPrecioBase(399.99);
-    lavadora.setColor("Metalizado");
+    lavadora.setColor("Amarillo");
     lavadora.setConsumoEnergetico("A");
     lavadora.setPeso(35);
 
@@ -24,7 +26,7 @@ class Main{
     System.out.println("-GET del Peso: " + lavadora.getPeso());
 
     //Calcular el precio final
-    System.out.println("--Precio Final: " + lavadora.calcularPrecioFinal());
+    System.out.println("--Precio Final: " + lavadora.calcularPrecioFinal() + " euros");
 
   }
 }
